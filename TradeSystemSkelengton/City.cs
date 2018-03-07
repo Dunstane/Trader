@@ -45,7 +45,7 @@ namespace TradeSystemSkelengton
         /// <param name="yLoc"></param>
         /// <param name="myResources"></param>
         /// <param name="myKnownCities"></param>
-        public City(string name, float xLoc, float yLoc,List<Resource> myResources,List<City> myKnownCities, )
+        public City(string name, float xLoc, float yLoc,List<Resource> myResources,List<City> myKnownCities)
         {
             this.name = name;
             this.yLoc = yLoc;

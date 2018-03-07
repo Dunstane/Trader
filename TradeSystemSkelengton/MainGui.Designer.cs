@@ -1,6 +1,6 @@
 ﻿namespace TradeSystemSkelengton
 {
-    partial class Form1
+    partial class MainGui
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SimulationPB = new System.Windows.Forms.PictureBox();
             this.citieslb = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TestPopulatebt = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.SimulationPB)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // SimulationPB
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(29, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(975, 555);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.SimulationPB.Location = new System.Drawing.Point(43, 12);
+            this.SimulationPB.Name = "SimulationPB";
+            this.SimulationPB.Size = new System.Drawing.Size(1122, 442);
+            this.SimulationPB.TabIndex = 0;
+            this.SimulationPB.TabStop = false;
             // 
             // citieslb
             // 
             this.citieslb.FormattingEnabled = true;
             this.citieslb.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.citieslb.Location = new System.Drawing.Point(424, 472);
+            this.citieslb.Location = new System.Drawing.Point(609, 460);
             this.citieslb.Name = "citieslb";
             this.citieslb.Size = new System.Drawing.Size(556, 95);
             this.citieslb.TabIndex = 1;
             // 
-            // Form1
+            // TestPopulatebt
+            // 
+            this.TestPopulatebt.Location = new System.Drawing.Point(1090, 569);
+            this.TestPopulatebt.Name = "TestPopulatebt";
+            this.TestPopulatebt.Size = new System.Drawing.Size(75, 23);
+            this.TestPopulatebt.TabIndex = 2;
+            this.TestPopulatebt.Text = "Test";
+            this.TestPopulatebt.UseVisualStyleBackColor = true;
+            this.TestPopulatebt.Click += new System.EventHandler(this.TestPopulatebt_Click);
+            // 
+            // MainGui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1251, 604);
+            this.Controls.Add(this.TestPopulatebt);
             this.Controls.Add(this.citieslb);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Controls.Add(this.SimulationPB);
+            this.Name = "MainGui";
+            this.Text = "Main";
+            ((System.ComponentModel.ISupportInitialize)(this.SimulationPB)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox SimulationPB;
         private System.Windows.Forms.ListBox citieslb;
+        private System.Windows.Forms.Button TestPopulatebt;
     }
 }
 
