@@ -5,6 +5,13 @@ namespace TradeSystemSkelengton
 {
     /// <summary>
     /// basic city, doesnt need to know much. maybe just who it's connected to and what they are sending eachother
+    /// TODO:Needs and consumption, population?
+    ///
+    /// city types, differing needs and consumptions
+    ///Artisan= Needs more food,produces more rare goods
+    ///Agriculture= produces own food(lower consumption mod), poorer.
+    ///
+    /// Production: Start simple, expand.
     /// </summary>
     internal class City
     {
@@ -13,7 +20,7 @@ namespace TradeSystemSkelengton
         private float yLoc;
         private List<City> connectedCities; //cities I know
         private List<Resource> connectedResources; //resources I have
-       
+        private enum Citytype { Artisan, Agriculture }; //assigned to a city at creation
         /// <summary>
         /// default with no attached cities or resources
         /// </summary>
@@ -38,7 +45,7 @@ namespace TradeSystemSkelengton
         /// <param name="yLoc"></param>
         /// <param name="myResources"></param>
         /// <param name="myKnownCities"></param>
-        public City(string name, float xLoc, float yLoc,List<Resource> myResources,List<City> myKnownCities)
+        public City(string name, float xLoc, float yLoc,List<Resource> myResources,List<City> myKnownCities, )
         {
             this.name = name;
             this.yLoc = yLoc;

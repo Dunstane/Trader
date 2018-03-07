@@ -51,7 +51,10 @@ namespace TradeSystemSkelengton
             blocks.Add(temp);
         }
 
-
+/// <summary>
+/// adds value o existing resource or adds entirely new resource
+/// </summary>
+/// <param name="datFukkenBlock"></param>
         public void consumeTB(Tradeblock datFukkenBlock)
         {
             if (this.EndCity.containsResource(datFukkenBlock.giveTransportName()))
@@ -81,7 +84,7 @@ namespace TradeSystemSkelengton
                 {
 
                     //block arrived, change values, delete from list
-                    EndCity.addToResource(x.giveTransportName(), x.giveTransportQuantity());
+                    consumeTB(x);
                     blocks.Remove(x);
                 }
               

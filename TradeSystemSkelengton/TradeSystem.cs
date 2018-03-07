@@ -3,12 +3,13 @@ using System.Diagnostics;
 
 namespace TradeSystemSkelengton
 {
-    //todo
-    //locations and mapgrid
-    //resources
-    //resource orderlist (for checks so no multiple orders of the same thing)
-    //pulse system
-    //expansion of city and line classes
+    //TODO after 2nd stretch
+    //rethinking of the resource system
+    //city consumption and production
+    //city types
+    //pulse system.
+
+ 
 
     /// <summary>
     /// System to be used in trade game. mainly aims to trade resources between nodes(cities)
@@ -19,8 +20,8 @@ namespace TradeSystemSkelengton
         private List<City> Cities; //list of known cities to system      todo needs identifiers
         private List<Resource> Resources;
         public static List<string> acceptedResourceNames;
+    
 
-        
         /// <summary>
         /// initialize system with default values if needed
         /// </summary>
